@@ -16,3 +16,7 @@ Lacework Agentless scanning creates instance snapshots for filesystem scanning b
 3. Terraform init
 4. Terraform validate
 5. Terraform apply
+
+You should see a message like below to validate the applicable images have been identified and removed. 
+
+![image](https://github.com/user-attachments/assets/a84565b4-6570-49d9-9194-7a6211b82d0b)
