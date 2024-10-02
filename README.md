@@ -3,7 +3,7 @@
 
 
 ## Overview
-Lacework Agentless scanning creates instance snapshots for filesystem scanning in AWS and removes the snapshots post-analysis after a set period of time. The script can be used to more frequently scan for Agentless snapshots created by Lacework and remove them. The Terraform module creates an IAM role for AWS Lambda and attaches a policy to describe and delete snapshots. The lambda function runs per region and identifies applicable snapshots based on Lacework Agentless tags. The Lambda runs daily via cron job and looks for snapshots older than 7 days to be deleted.  
+Lacework Agentless scanning creates instance snapshots for filesystem scanning in AWS and removes the snapshots post-analysis after a set period of time. You may choose to more frequently scan for any Agentless snapshots created by Lacework and remove them on a recurring basis for cost optimization. The Terraform module creates an IAM role for AWS Lambda and attaches a policy to describe and delete snapshots. The lambda function runs per region and identifies applicable snapshots based on Lacework Agentless tags. The Lambda runs daily via cron job and looks for snapshots older than 7 days to be deleted.  
 
 ## Requirements
 
