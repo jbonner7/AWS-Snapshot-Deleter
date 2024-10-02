@@ -1,5 +1,5 @@
 # Lacework-FortiCNAPP-Agentless-Snapshot-Deleter
-![forticnapp](./img/Overview.png)
+![forticnapp](./img/forticnapp.png)
 
 
 ## Overview
