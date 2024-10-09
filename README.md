@@ -1,11 +1,10 @@
-# Lacework-FortiCNAPP-Agentless-Snapshot-Deleter for AWS
-![forticnapp](./img/forticnapp.png)
+# Snapshot-Deleter for AWS
+![image](https://github.com/user-attachments/assets/31038ce7-7729-4c29-8d4a-ba5d4db527ea)
+
 
 
 ## Overview
-Lacework Agentless scanning creates instance snapshots for filesystem scanning in AWS and removes the snapshots post-analysis after a set period of time. You may choose to more frequently scan for any Agentless snapshots created by Lacework and remove them on a recurring basis for cost optimization. Optionally, you could use the script for the periodic removal of non-Lacework snapshots as well. Simply update the tags.
-
-The Terraform module creates an IAM role for AWS Lambda and attaches a policy to describe and delete snapshots. The lambda function runs per region and identifies applicable snapshots based on Lacework Agentless tags. The Lambda runs daily via cron job and looks for snapshots older than 7 days to be deleted.  
+Resource management in the cloud plays an important role not just in the security of your cloud environment, but for cost optimization as well. The script can be used for the periodic removal of EBS snapshots. Simply update the tags in the Lambda python script. The Terraform module creates an IAM role for AWS Lambda and attaches a policy to describe and delete snapshots. The lambda function runs per region and identifies applicable snapshots based on AWS tags. The Lambda runs daily via cron job and looks for snapshots older than 7 days to be deleted.  
 
 ## Requirements
 
